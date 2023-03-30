@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS HANDSON 2</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+        <h1> JAVASCRIPT Q&A (DECISION MAKING)</h1>
+
+    <h4><span class="Q">Q1.</span> Calculator</h4>
+    <p> - Write a program to make a simple calculator using switch statement that takes operator and two numbers 
+        from user and print the result after operation.</p>
+    <h4>Input Format</h4>
+    <p> -The input contains a operator symbol (+,−,∗,/) along with two natural numbers B and C.</p>
+    <h4>Output Format</h4>
+    <p> - Return the required result.</p>
+    <pre> → Ans const Calculator = (A, B, C) => 
+        {
+            switch(A){
+              case "+": return B+C;
+              case "-": return B-C;
+              case "*": return B*C;
+              case "/": return B/C;
+            }
+            
+        };</pre>
+    <hr>
+
+    <h4><span class="Q">Q2.</span> Check whether the condition is fulfilled or not?</h4>
+    <p> - Write a program that takes a number and prints whether the number is divisible by 6 and 9 or not.</p>
+    <h4>Input Format</h4>
+    <p> - The input contains a single number N.</p>
+    <h4>Output Format</h4>
+    <p> - If the condition is satisfied return "Divisible by both" (without quotes) else return 
+        "Not Divisible by both" (without quotes). </p>
+    <pre> → Ans  const Check_divisibility = (N) => {
+        if(N%6===0 && N%9===0){
+          return "Divisible by both"
+        }
+         
+        else{
+          return "Not Divisible by both"
+        }
+         
+     };
+     </pre>
+    <hr>
+
+    <h4><span class="Q">Q3.</span> Eligible Voter</h4>
+    <p> - You are given an integer A , denoting the age of a person, and your task is to determine whether he/she
+         is eligible to vote or not.</p>
+    <h4>Input Format</h4>
+    <p> - The first and the only line of the input contains an integer A, representing the age of a person.</p>
+    <h4>Output Format</h4>
+    <p> - If the person is eligible to vote, return "Eligible for Voting" otherwise, return 
+        "Not Eligible for Voting" (without quotes).</p>
+    <pre> → Ans  const isEligible = (a) => {
+        if(a>=18){
+          return"Eligible for Voting"
+        }
+        
+        else{
+          return "Not Eligible for Voting"
+        }
+    };
+    </pre>
+    <hr>
+
+    <h4><span class="Q">Q4.</span> Find Relation</h4>
+    <p> - PrepBuddy wants you to get familiar with various Relational operators. He provides you with two integer 
+        values  X and Y and asks you to find the relation between them.The relationships between integers X and Y 
+        are as follows:<br>
+        If X < Y, it means that X is smaller than Y.<br>
+        If X > Y, it means that X is greater than Y. <br>
+        If X= Y,it means that X is equal to Y. <br></p>
+    <h4>Input Format</h4>
+    <p> - The first and the only line of the input contains two space-separated integers X and Y, denoting the 
+        integers which PrepBuddy gives you.</p>
+    <h4>Output Format</h4>
+    <p> - Return the relationship between the integers that PrepBuddy gave you.</p>
+    <pre> → Ans  const findRelation = (x,y) => {
+        if(x<y){
+          return x+" is smaller than "+y;
+        }
+        
+        else if(x>y){
+          return x+" is greater than "+y;
+        }
+        
+        else{
+          return x+" is equal to "+y;
+        }
+    };
+    </pre>
+    <hr>
+
+    <h4><span class="Q">Q5.</span> Find Grades</h4>
+    <p> - Your school has the following grading system based upon the marks(M) obtained by a student:If 
+        M≤10, the grade will be E.<br>
+        If 11≥M≤20, the grade will be D.<br>
+        If 21≥M≤30, the grade will be C.<br>
+        If 31≥M≤40, the grade will be B.<br>
+        If 41≥M≤50, the grade will be A.<br>
+        Your friend will enter his marks out of 50, and your task is to print his grades using a switch statement.</p>
+    <h4>Input Format</h4>
+    <p> - The first and the only line of the input contains an integer M, representing the marks that your friend 
+          will enter in the grading system.</p>
+    <h4>Output Format</h4>
+    <p> - Return the grade obtained by your friend.</p>
+    <pre> → Ans  const findGrades = (a) => {
+        if(a<=10){
+          return "E"
+        }
+        
+        else if(a>=11 && a<=20){
+          return "D"
+        }
+        
+        else if(a>=21 && a<=30){
+          return "C"
+        }
+        
+        else if(a>=31 && a<=40){
+          return "B"
+        }
+        
+        else {
+          return "A"
+        }
+      }</pre>
+    <hr>
+
+    <h4><span class="Q">Q6.</span> Get Value</h4>
+    <p> - You are provided with a table containing some characters and their corresponding values. Your task will 
+        be to find the value from the table corresponding to an input character and return it.<br>
+
+        | P or p 	- PrepBytes      	|<br>
+        | Z or z 	- Zenith         	|<br>
+        | E or e 	- Expert Coder   	|<br>
+        | D or d 	- Data Structure 	|<br></p>
+    <h4>Input Format</h4>
+    <p> - The first and the only line of the input contains a character C, representing the character that you will
+         get in input.</p>
+    <h4>Output Format</h4>
+    <p> - Return the value corresponding to the input character.</p>
+    <pre> → Ans  const getValue = (a) => {
+        if(a==="P" || a==="p"){
+          return "PrepBytes";
+        }
+        
+        else if(a==="Z" || a==="z"){
+        return "Zenith";
+        }
+        
+        else if(a==="E" || a==="e"){
+          return "Expert Coder";
+        }
+        
+        else{
+          return "Data Structure";
+        }
+    };
+    </pre>
+    <hr>
+
+    <h4><span class="Q">Q7.</span> Find the maximum out of three numbers.</h4>
+    <p> - Take three numbers and print the largest number among them if all of three are same print  −1..</p>
+    <h4>Input Format</h4>
+    <p> - The input contains three numbers A, B and C.</p>
+    <h4>Output Format</h4>
+    <p> - Return the maximum number out of the three numbers as result.</p>
+    <pre> → Ans  const Max_out_of_three = (A,B,C) => {
+        if(A>B && A>C){
+          return A
+        }
+        
+        else if(B>C && B>A){
+          return B
+        }
+        
+        else if(C>A && C>B){
+          return C
+        }
+        
+        else{
+          return "-1"
+        }
+    
+    };
+    </pre>
+    <hr>
+
+    <h4><span class="Q">Q8.</span> Second Smallest</h4>
+    <p> - You are given 3 distinct integers X,Y,and Z,and your task is to find and return the second smallest 
+        integer among the three provided integers.</p>
+    <h4>Input Format</h4>
+    <p> - The first and the only line of the input contains three space-separated integers X, Y, and Z, denoting 
+        the integers among which you have to find the second smallest element.</p>
+    <h4>Output Format</h4>
+    <p> - Return the second smallest integer among the three integers given to you.</p>
+    <pre> 
+      → Ans const findSndSmallest = (x,y,z) => {
+        if((x<y && y &lt; z) || (x>y && y>z)){
+          return y
+        }
+        
+        else if((x<y && x>z)||(x>y && x &lt; z)){
+          return x
+        }
+        
+        else{
+          return z
+        }
+    };
+   </pre>
+    <hr>
+
+    <h4><span class="Q">Q9.</span>Check whether the triangle is Acute or Obtuse</h4>
+    <p> - Write a program takes takes three angles and checks whether the triangle is acute or obtuse.</p>
+    <h4>Input Format</h4>
+    <p> - The input contains three numbers A, B and C which denotes the angles of a triangle.</p>
+    <h4>Output Format</h4>
+    <p> -Return the required result.</p>
+    <pre> 
+    const Triangle_Check = (A,B,C) => {
+        if(A<90 && B<90 && C<90){
+          return "acute";
+        }
+    
+        else{
+        return "obtuse";
+        }
+        
+    };
+    </pre>
+    <hr>
