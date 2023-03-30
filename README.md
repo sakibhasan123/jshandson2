@@ -1,1 +1,1 @@
-# Second JS Handson (DECISION MAKING)
+# JS Handson 2 (DECISION MAKING)
